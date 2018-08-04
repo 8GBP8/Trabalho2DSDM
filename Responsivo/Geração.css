@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding-right: ;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+		background-image: url("imgs/img5.jpg");
+	 	background-size: cover;
+}
+
+[class*="h"] {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+.drbtn {
+	background-color: orange;
+	border: 1px solid white;
+	color: black;
+	padding: 14px 22px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 8px;
+}
+
+.drbtn:hover {
+		background-color: #B27616;
+		color: black;
+}
+
+ul {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 50px;
+}
+
+ul a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ul a:hover {
+	background-color: white;
+	color: orange;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav:hover .drbtn {
+    background-color: white;
+}
+
+.ca1 {
+	background-color: #FFD73E;
+	border-radius: 8px;
+  font-family: URW Chancery L, cursive;
+}
+
+.hpi {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.h2t {
+  margin-left: 16.66%;
+	background-color: #63CC2A;
+	font-family: URW Chancery L, cursive;
+	box-shadow: 1px 1px 1px grey;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 8px;
+}
+
+.pa {
+	background-color: #FF9161;
+	border-radius: 8px;
+  margin-left: 16.66%;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 360px) {
+  .img3,
+  .img7 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img8 {
+    width: 300px;
+    height: 180px;
+  }
+
+  .img9 {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .img3,
+  .img7 {
+    width: 375px;
+    height: 375px;
+  }
+
+  .img8 {
+    width: 375px;
+    height: 225px;
+  }
+
+  .img9 {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .img3,
+  .img7 {
+    width: 450px;
+    height: 450px;
+  }
+
+  .img8 {
+    width: 600px;
+    height: 300px;
+  }
+
+  .img9 {
+    width: 300px;
+    height: 450px;
+  }
+}
